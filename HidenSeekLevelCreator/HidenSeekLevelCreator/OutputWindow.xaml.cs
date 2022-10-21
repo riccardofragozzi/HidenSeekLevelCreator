@@ -49,6 +49,7 @@ namespace HidenSeekLevelCreator
             {
                 currOffset = point;
                 txtOut.Text += string.Format("\t<wall position=\"{0}\">", point.X * 17 + "," + point.Y * 17) + Environment.NewLine;
+                setInstruction();
                 return;
             }
             if (firstVertex.X < 0)
